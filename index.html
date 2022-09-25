@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Spotify - Music is Everywhere</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://css.gg/css?=|play-backwards|play-button-o|play-forwards" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul>
+        <li class="brand"><img src="logo.png" alt="Spotify">Spotify</li>
+        <li>Home</li>
+        <li>About</li>
+        <li>Your Library</li>
+        </ul>
+    </nav>
+
+    <div class ="container">
+        <h1>Pahadi</h1>
+        <div class ="songitemconatiner">
+            <div class="songitem" >
+                <img src="c1.jpg" alt="1">
+            
+                <span>Mai Jandu Meri Basanti</span>
+                <span class="songlistplay"><span class="timestamp">01:17<span> <i onclick="chng_song('m1.mp3')" class="gg-play-button-o"></i></span></span>
+            </div>
+
+            
+            <div class="songitem">
+                <img src="c2.jpg" alt="1">
+                <span>Tero Lehnga</span>
+                <span class="songlistplay"><span class="timestamp">03:14<span> <i onclick="chng_song('m2.mp3')" class="gg-play-button-o"></i></span></span>
+            </div>
+
+            <div class="songitem">
+                <img src="c3.jpg" alt="1">
+                <span>Rupsa Ra Moti</span>
+                <span class="songlistplay"><span class="timestamp">03:06<span> <i onclick="chng_song('m3.mp3')" class="gg-play-button-o"></i></span></span>
+            </div>
+
+            <div class="songitem">
+                <img src="c4.jpg" alt="1">
+                <span>Thal ki Bazara</span>
+                <span class="songlistplay"><span class="timestamp">03:24<span> <i onclick="chng_song('m4.mp3')" class="gg-play-button-o"></i></span></span>
+            </div>
+
+            <div class="songitem">
+                <img src="c5.jpg" alt="1">
+                <span>Mathu Mathu</span>
+                <span class="songlistplay"><span class="timestamp">05:02<span> <i onclick="chng_song('m5.mp3')" class="gg-play-button-o"></i></span></span>
+            </div>
+
+        </div>
+        <div class="Songbanner"></div>
+        </div>
+    
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" max="100">
+    <div class="icons">
+        <i class="gg-play-backwards"></i>
+        <i class="gg-play-button-o" onclick="handle_play()" id="masterPlay"></i>
+        <i class="gg-play-forwards"></i>
+
+    </div>
+    <div class="songinfo">
+        <img src="w1.gif" width="0px" alt="">
+    </div>
+
+
+
+    </div>
+    <!-- <script src="script.js"></script> -->
+
+
+</body> 
+
+<script>
+    var audio;
+    var audio = new Audio();
+    function chng_song(song){
+
+        document.getElementById("masterPlay").style.backgroundColor='cyan'
+        audio.src = song
+        audio.play();
+        
+        
+        // document.querySelector
+    }
+
+    function handle_play(){
+
+        if(audio.paused){
+            audio.play()
+        }
+        else{
+            audio.pause();
+        }
+    }
+
+</script>
+
+</html>

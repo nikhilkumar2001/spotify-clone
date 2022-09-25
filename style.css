@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body{
+    background-color: aqua;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Poppins' , sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: whitesmoke;
+}
+nav ul li{
+    padding: 0 12px;
+}
+
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    
+}
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.container{
+    min-height: 70vh;
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'varela Round', sans-serif;
+    display: flex;
+    width: 70%;
+    margin: 20px auto;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url("bc.jpg");
+
+
+}
+
+
+.bottom{
+    position: sticky;
+    height: 50px;
+    background-color: black;
+    color: whitesmoke;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons{
+    margin-top: 12px;
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+}
+.icons i{
+    height: 50%auto;
+    cursor: pointer;
+}
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+    }
+
+.songitem{
+    height: 40px;
+    display: flex;
+    background: color 0;
+    color: white;
+    width: 100%;
+    margin: 12px px;
+    margin-top: 55px;
+    margin-left: -128px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
+
+}
+
+.songitem img{
+    width: 80px;
+    margin: 0px 5px;
+    border-radius: 32px;
+}
+
+.spantimestamp{
+    display: flex;
+    position: absolute;
+    justify-items: end;
+    margin: 20px;
+    margin-top: 25px;
+    margin-bottom: -90px;
+    margin-left: -120px;
+}
+.timestamp{
+    cursor: pointer;
+}
